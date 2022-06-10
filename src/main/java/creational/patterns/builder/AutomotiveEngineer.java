@@ -5,7 +5,6 @@ public class AutomotiveEngineer {
     private final CarBuilder builder;
 
     public AutomotiveEngineer(CarBuilder builder) {
-        super();
         this.builder = builder;
         if (this.builder == null) {
             throw new IllegalArgumentException("Automotive Engineer can't work without Car Builder!");

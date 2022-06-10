@@ -7,10 +7,6 @@ public class ClassicCarBuilder implements CarBuilder {
     private String paint;
     private String interior;
 
-    public ClassicCarBuilder() {
-        super();
-    }
-
     @Override
     public CarBuilder fixChassis(String chassis) {
         this.chassis = chassis;
@@ -41,9 +37,8 @@ public class ClassicCarBuilder implements CarBuilder {
         if (car.doQualityCheck()) {
             return car;
         } else {
-            System.out.println("Car assembly is incomplete. Can't deliver!");
+            throw new IllegalArgumentException("Car assembly is incomplete. Can't deliver!");
         }
-        return null;
     }
 
 }
