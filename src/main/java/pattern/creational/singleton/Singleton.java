@@ -13,7 +13,7 @@ public final class Singleton {
         this.name = name;
     }
 
-    public static Singleton getInstance(String name) {
+    public static synchronized Singleton getInstance(String name) {
         if (singleton == null) singleton = new Singleton(name);
         return singleton;
     }
