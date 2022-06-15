@@ -1,6 +1,5 @@
-package pattern.singleton;
+package pattern.creational.singleton;
 
-import pattern.creational.singleton.Singleton;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

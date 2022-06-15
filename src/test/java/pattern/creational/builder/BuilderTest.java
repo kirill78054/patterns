@@ -1,9 +1,5 @@
-package pattern.builder;
+package pattern.creational.builder;
 
-import pattern.creational.builder.AutomotiveEngineer;
-import pattern.creational.builder.Car;
-import pattern.creational.builder.CarBuilder;
-import pattern.creational.builder.ClassicCarBuilder;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

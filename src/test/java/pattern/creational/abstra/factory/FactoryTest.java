@@ -1,9 +1,6 @@
-package pattern.abstra.factory;
+package pattern.creational.abstra.factory;
 
 import org.junit.Test;
-import pattern.creational.abstra.factory.Factory;
-import pattern.creational.abstra.factory.MacFactory;
-import pattern.creational.abstra.factory.WinFactory;
 
 import static org.junit.Assert.assertEquals;
 

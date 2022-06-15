@@ -1,8 +1,6 @@
-package pattern.prototype;
+package pattern.creational.prototype;
 
 import org.junit.Test;
-import pattern.creational.prototype.Circle;
-import pattern.creational.prototype.Rectangle;
 
 import static org.junit.Assert.assertEquals;
 
