@@ -1,5 +1,12 @@
 package pattern.structural.bridge;
 
+/*
+Мост(Bridge)
+
+Разделяет один или несколько классов на две отдельные
+иерархии — абстракцию и реализацию, позволяя изменять их
+независимо друг от друга.
+*/
 public class Remote {
 
     private final Device device;

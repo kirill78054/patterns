@@ -2,12 +2,17 @@ package pattern.creational.singleton;
 
 import lombok.Getter;
 
+/*
+Одиночка(Singleton)
+
+Гарантирует, что у класса есть только один экземпляр, и предо-
+ставляет к нему глобальную точку доступа.
+*/
 public final class Singleton {
 
+    private static Singleton singleton;
     @Getter
     private final String name;
-
-    private static Singleton singleton;
 
     private Singleton(String name) {
         this.name = name;

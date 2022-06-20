@@ -1,5 +1,11 @@
 package pattern.creational.prototype;
 
+/*
+Прототип(Prototype)
+
+Позволяет копировать объекты, не вдаваясь в подробности
+их реализации.
+*/
 public abstract class Shape {
 
     protected int x, y;
@@ -12,7 +18,7 @@ public abstract class Shape {
     }
 
     public int getSquare() {
-        return x*y;
+        return x * y;
     }
 
     public abstract Shape clone();

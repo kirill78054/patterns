@@ -2,6 +2,13 @@ package pattern.structural.composite;
 
 import java.util.List;
 
+/*
+Компоновщик(Composite)
+
+Позволяет сгруппировать множество объектов в древовидную
+структуру, а затем работать с ней так, как будто это единичный
+объект.
+*/
 public class ImageEditor {
 
     private final CompoundGraphic all = new CompoundGraphic();
