@@ -7,28 +7,28 @@ package pattern.behavioral.visitor;
 public class XMLExportVisitor implements Visitor {
 
     @Override
-    public void visitDot(Dot d) {
+    public void visit(Dot d) {
         d.move(1, 2);
         d.draw();
         d.specialMethodDot();
     }
 
     @Override
-    public void visitCircle(Circle c) {
+    public void visit(Circle c) {
         c.move(2, 2);
         c.draw();
         c.specialMethodCircle();
     }
 
     @Override
-    public void visitRectangle(Rectangle r) {
+    public void visit(Rectangle r) {
         r.move(2, 3);
         r.draw();
         r.specialMethodRectangle();
     }
 
     @Override
-    public void visitCompoundShape(CompoundShape cs) {
+    public void visit(CompoundShape cs) {
         cs.move(3, 3);
         cs.draw();
         cs.specialMethodCompoundShape();

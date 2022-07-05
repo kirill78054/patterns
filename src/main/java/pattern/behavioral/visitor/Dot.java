@@ -21,7 +21,7 @@ public class Dot implements Shape {
 
     @Override
     public void accept(Visitor visitor) {
-        visitor.visitDot(this);
+        visitor.visit(this);
     }
 
 }

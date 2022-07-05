@@ -9,12 +9,12 @@ package pattern.behavioral.visitor;
 */
 public interface Visitor {
 
-    void visitDot(Dot d);
+    void visit(Dot d);
 
-    void visitCircle(Circle c);
+    void visit(Circle c);
 
-    void visitRectangle(Rectangle r);
+    void visit(Rectangle r);
 
-    void visitCompoundShape(CompoundShape cs);
+    void visit(CompoundShape cs);
 
 }
