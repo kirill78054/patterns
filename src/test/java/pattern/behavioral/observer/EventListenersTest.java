@@ -10,8 +10,8 @@ public class EventListenersTest {
         EventListeners emailAlertsListener = new EmailAlertsListener();
         EventListeners loggingListener = new LoggingListener();
 
-        editor.getEventManager().subscribe("save", emailAlertsListener);
         editor.getEventManager().subscribe("open", loggingListener);
+        editor.getEventManager().subscribe("save", emailAlertsListener);
 
         editor.openFile("test.file");
         editor.saveFile();
