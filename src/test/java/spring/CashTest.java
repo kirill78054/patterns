@@ -1,4 +1,4 @@
-package spring.aspect;
+package spring;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

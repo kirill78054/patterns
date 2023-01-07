@@ -4,7 +4,7 @@ import java.util.Objects;
 
 class Car {
 
-    private int id;
+    private final int id;
     private String model;
 
     public Car(int id, String model) {

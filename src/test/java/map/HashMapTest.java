@@ -7,10 +7,10 @@ import java.util.Map;
 
 import static org.junit.Assert.assertFalse;
 
-public class MapTest {
+public class HashMapTest {
 
     @Test
-    public void mapTest() {
+    public void callTest() {
         Car car = new Car(1, "BMW");
         Map<Car, String> cars = new HashMap<>();
         cars.put(car, "one");
