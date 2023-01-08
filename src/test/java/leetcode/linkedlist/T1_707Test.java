@@ -23,7 +23,7 @@ myLinkedList.get(1);              // return 3
  */
 public class T1_707Test {
 
-    MyLinked707List list = new MyLinked707List();
+    MyLinkedList707 list = new MyLinkedList707();
 
     @Before
     public void init() {
@@ -34,7 +34,7 @@ public class T1_707Test {
 
     @Test
     public void case24Test() {
-        MyLinked707List list = new MyLinked707List();
+        MyLinkedList707 list = new MyLinkedList707();
         list.addAtHead(38);
         list.addAtTail(66);
         list.addAtTail(61);
@@ -51,7 +51,7 @@ public class T1_707Test {
 
     @Test
     public void case23Test() {
-        MyLinked707List list = new MyLinked707List();
+        MyLinkedList707 list = new MyLinkedList707();
         list.addAtHead(1);
         list.deleteAtIndex(1);
         list.deleteAtIndex(1);

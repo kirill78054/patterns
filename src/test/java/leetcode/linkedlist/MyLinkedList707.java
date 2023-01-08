@@ -1,6 +1,6 @@
 package leetcode.linkedlist;
 
-public class MyLinked707List {
+public class MyLinkedList707 {
 
     int size;
     private Node head;
