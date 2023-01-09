@@ -27,7 +27,14 @@ public class T2_141Test {
         two.next = three;
         ListNode four = new ListNode(-4);
         three.next = four;
-        four.next = two;
+        ListNode five = new ListNode(5);
+        four.next = five;
+        ListNode six = new ListNode(6);
+        five.next = six;
+        ListNode seven = new ListNode(7);
+        six.next = seven;
+
+        seven.next = three;
         assertTrue(hasCycle(one));
     }
 
@@ -37,14 +44,13 @@ public class T2_141Test {
         }
 
         ListNode first = head;
-        ListNode second = head.next;
+        ListNode second = head;
         while (second != null && second.next != null) {
+            first = first.next;
+            second = second.next.next;
             if (first.equals(second)) {
                 return true;
             }
-
-            first = first.next;
-            second = second.next.next;
         }
         return false;
     }
