@@ -20,7 +20,7 @@ class Car {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        map.Car car = (map.Car) o;
+        Car car = (Car) o;
         return id == car.id && Objects.equals(model, car.model);
     }
 

@@ -11,10 +11,13 @@ public class HashMapTest {
 
     @Test
     public void callTest() {
-        Car car = new Car(1, "BMW");
         Map<Car, String> cars = new HashMap<>();
+
+        Car car = new Car(1, "BMW");
+
         cars.put(car, "one");
         car.setModel("Toyota");
+
         assertFalse(cars.containsKey(car));
     }
 
